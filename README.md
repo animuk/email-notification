@@ -13,18 +13,26 @@ source ./mailsend.env
 
 2. download the required softwares
    yum install java -y
+   
    yum install git -y
+   
    yum install maven -y
 
 3. Clone the repository:
+
 https://github.com/animuk/email-notification.git
 	
-2. Go to the Repository and Build the executable maven jar
+4. Go to the Repository and Build the executable maven jar
+
 	--> mvn package
-3.Execute the Jar file as mentioned below:
+	
+5.Execute the Jar file as mentioned below:
+
 	java -jar target/coding-challenge-1.0.3.jar
-4.Now, REST Service is ready to serve the request
-5. Open Postman and invoke the API: http://localhost:8080/sendmail with the body as:
+	
+6.Now, REST Service is ready to serve the request
+
+7. Open Postman and invoke the API: http://localhost:8080/sendmail with the body as:
 
    {
 	"from" : "careers.anindya@gmail.com",
