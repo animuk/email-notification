@@ -11,7 +11,8 @@ echo "export MAILGUN_URL='https://api.mailgun.net/v3/sandbox2741367f90b2469d80c9
 echo "mailsend.env" >> .gitignore
 source ./mailsend.env
 
-2. download the required softwares
+2. download the required softwares:
+
    yum install java -y
    
    yum install git -y
