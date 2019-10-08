@@ -9,7 +9,7 @@ echo "export SENDGRID_URL='https://api.sendgrid.com/v3/mail/send'" >> mailsend.e
 
 echo "export MAILGUN_API_KEY='<<YOUR_API_KEY>>'" >> mailsend.env
 
-echo "export MAILGUN_URL='<<MAILGUN URL HERE>>'" >> mailsend.env
+echo "export MAILGUN_URL='<< MAILGUN URL HERE >>'" >> mailsend.env
 
 echo "mailsend.env" >> .gitignore
 
@@ -40,8 +40,8 @@ https://github.com/animuk/email-notification.git
 7. Open Postman and invoke the API: http://localhost:8080/sendmail with the body as:
 
    {
-	"from" : "careers.anindya@gmail.com",
-	"to": "a.mukherjee7@gmail.com",
+	"from" : "sample1@gmail.com",
+	"to": "sample2@gmail.com",
 	"subject": "Test Subject",
 	"content": "I can see the magic content"
    }
