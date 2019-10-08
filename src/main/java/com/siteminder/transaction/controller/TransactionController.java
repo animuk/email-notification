@@ -42,7 +42,7 @@ public class TransactionController {
 
 		// the 1st service reachability
 		post = new HttpPost(System.getenv("SENDGRID_URL"));
-		post.setHeader("authorization", "Bearer " + System.getenv("SENDGRID_API_KEY"));// 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");
+		post.setHeader("authorization", "Bearer " + System.getenv("SENDGRID_API_KEY"));
 		post.setHeader("Content-type", "application/json");
 		String body = "{\"personalizations\":[{\"to\":[{\"email\":\"" + newTransaction.getTo()
 				+ "\",\"name\":\"Anindya M\"}]," + "\"subject\":\"" + newTransaction.getSubject()
